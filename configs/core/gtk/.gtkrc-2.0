@@ -3,7 +3,7 @@
 
 include "/home/nick/.gtkrc-2.0.mine"
 
-gtk-theme-name="oomox-Seshana-Arch"
+gtk-theme-name="Adapta-Midnight-Eta"
 gtk-icon-theme-name="ArchLabs-Light"
 gtk-font-name="Ubuntu Light 10"
 gtk-cursor-theme-name="ArchLabs-Light"

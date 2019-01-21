@@ -1,18 +1,17 @@
-default: install-yay install-packages enable-services link-config set-shell sync-neovim show-notes
-
-define list_subdirs
-    cd ${1} && ls -d */ && cd ..
-endef
-
-define stow_dir
-	stow -t ${HOME} -d ${1} --restow `$(call list_subdirs,${1})`
-endef
+default: install-yay init-repos install-packages install-dev-packages link-config set-shell sync-neovim show-notes
 
 install-yay:
 	./install-yay.sh
 
+init-repos:
+	bash scripts/repo.sh appkins aur-pkg/appkins_repo
+	yay -Syy
+
 install-packages:
-	yay -S --needed --noconfirm `cat packages.txt`
+	yay -S --needed --noconfirm `cat packages/core.txt`
+
+install-dev-packages:
+	yay -S --needed --noconfirm `cat packages/dev.txt`
 
 enable-services:
 	sudo systemctl enable lightdm NetworkManager tlp tlp-sleep

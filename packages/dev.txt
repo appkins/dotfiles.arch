@@ -1,0 +1,11 @@
+cmake
+cmake-format
+docker
+go
+kubectl-bin
+kubernetes-helm-bin
+kubernetes-helmfile-bin
+valgrind
+visual-studio-code-bin
+zsh
+zsh-theme-powerlevel9k

@@ -1,0 +1,13 @@
+Releases must be labeled current for all repos using this script.
+
+Usage:
+    _try_add_repo "${repo_name}" "${github_project_path}"
+
+    @params
+    
+    repo_name:
+        the name associated with the arch repo db file
+        
+    github_project_path:
+        the relative path to the github repo
+        e.g. user/repo = https://github.com/user/repo/download/current/
