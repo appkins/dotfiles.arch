@@ -1,0 +1,77 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    // Icons
+    "workbench.iconTheme": "material-icon-theme",
+    // Activitus Bar
+    "activitusbar.activeColour": "#fff",
+    "activitusbar.inactiveColour": "#bbb",
+    "activitusbar.priority": 99999,
+    "activitusbar.alignment": "Left",
+    "activitusbar.views": {
+        "explorer": "file-text",
+        "search": "search",
+        "scm": "repo-forked",
+        "debug": "bug",
+        "extensions": "package",
+        "extension.dockerView": "rocket",
+        "extension.cmake__viewContainer": "rocket"
+    },
+    "activitusbar.toggleSidebar": false,
+    // Python
+    "python.jediEnabled": false,
+    "editor.mouseWheelZoom": true,
+    // Style
+    "editor.fontFamily": "'Fira Mono', Consolas, 'Courier New', monospace",
+    "window.menuBarVisibility": "toggle",
+    "window.titleBarStyle": "native",
+    // Theme
+    "workbench.colorTheme": "Horizon Italic",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#1D1D1D",
+        "activityBar.border": "#101113",
+        "activityBar.dropBackground": "#1D1D1D",
+        "sideBar.background": "#101113",
+        "sideBar.border": "#1D1D1D",
+        "sideBarSectionHeader.background": "#1D1D1D",
+        "editor.background": "#151515",
+        "selection.background": "#1D1D1D",
+        "widget.shadow": "#101113",
+        "dropdown.background": "#1D1D1D",
+        "editorGroupHeader.tabsBackground": "#101113",
+        "tab.inactiveBackground": "#101113",
+        "tab.activeBorder": "#daa8cd",
+        "input.background": "#1D1D1D",
+        "editorWidget.background": "#151515",
+        "editorWidget.border": "#1D1D1D",
+        "editorHoverWidget.background": "#1D1D1D",
+        "button.hoverBackground": "#1D1D1D",
+        "list.hoverBackground": "#1D1D1D"
+    },
+    "editor.renderControlCharacters": true,
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.tips.enabled": false,
+    "material-icon-theme.activeIconPack": "",
+    "material-icon-theme.folders.associations": {
+        "tf": "download",
+        "cpp_redis": "download",
+        "as-lite": "download",
+        "env": "environment",
+        "cmake": "config",
+        ".cmake": "config",
+        "web": "public",
+        "compute": "tasks",
+        "ml": "batch",
+        "dtek": "lib"
+    },
+    "material-icon-theme.files.associations": {
+        "LibdtekConfig.cmake.in": "cmake"
+    },
+    "C_Cpp.clang_format_path": "/bin/clang-format",
+    "C_Cpp.default.browse.path": null,
+    "gtestExplorer.executable": "build/test/test_enhance",
+    "git.autorefresh": false,
+    "cmake.buildDirectory": "${workspaceRoot}/build"
+}
