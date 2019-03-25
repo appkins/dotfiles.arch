@@ -1,0 +1,15 @@
+#!/bin/sh -
+## Usage: install [options] DIR1 DIR2
+##
+## Options:
+##   -d, --debug   Enables debugging output.
+##   -a            Installs all dotfiles.
+##   -v            Enables verbose output.
+##   -r            Replaces all existing dotfiles (files/dirs will be backed up).
+##
+
+DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
+. "$DIR/scripts/install.sh"
+
+_unstow configs

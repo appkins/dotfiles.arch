@@ -1,4 +1,4 @@
-FileManager=Thunar
+FileManager=custom-FileManager
 TerminalEmulator=custom-TerminalEmulator
 WebBrowser=custom-WebBrowser
 

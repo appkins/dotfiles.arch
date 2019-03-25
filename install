@@ -10,19 +10,9 @@
 
 DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
-. "$DIR/common.sh"
+. "$DIR/scripts/install.sh"
 
-function _stow {
-    src_dir=$1
-	stow -t ${HOME} -d ${src_dir} -R `_list_subdirs ${src_dir}`
-}
-
-function _unstow {
-    src_dir=$1
-	stow -t ${HOME} -d ${src_dir} -D `_list_subdirs ${src_dir}`
-}
-
-# _parse_args "$@"
+_stow configs
 
 # if [ "$ALL" == "true" ]; then
 #     echo "Installing all dotfiles"
